@@ -1,0 +1,327 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Bruno+Ace+SC&family=Cinzel+Decorative:wght@400;700;900&family=Codystar:wght@300;400&family=Faculty+Glyphic&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Major+Mono+Display&family=Mea+Culpa&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Notable&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Orbitron:wght@400..900&family=Pliant:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Science+Gothic:wght@100..900&family=Space+Grotesk:wght@300..700&display=swap');
+
+::selection {
+  background: rgb(9, 20, 43);
+  color: rgb(0, 198, 253);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+  overflow-y: hidden;
+
+  background: #0f172a;
+  background-image: linear-gradient(135deg, #0f172a 0%, #081a42 50%, #020617 100%);
+
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  overflow: hidden;
+  position: relative;
+
+  color: white;
+  caret-color: transparent;
+}
+
+
+/* FLOATING TEXT EFFECTS */
+.floating-text {
+  font-family: 'Codystar', sans-serif;
+
+  position: absolute;
+
+  color: #08a2e9;
+
+  font-size: 30px;
+  font-weight: bold;
+
+  opacity: 1.0;
+
+  text-shadow:
+    0 0 10px #16a8d8,
+    0 0 20px #021f29;
+
+  user-select: none;
+  pointer-events: none;
+}
+
+
+/* INDIVIDUAL POSITIONS */
+
+.text1 {
+  top: 10%;
+  left: 5%;
+
+  animation: float1 10s ease-in-out infinite;
+}
+
+.text2 {
+  top: 20%;
+  right: 10%;
+
+  animation: float2 12s ease-in-out infinite;
+}
+
+.text3 {
+  bottom: 15%;
+  left: 10%;
+
+  animation: float3 14s ease-in-out infinite;
+}
+
+.text4 {
+  bottom: 10%;
+  right: 15%;
+
+  animation: float4 11s ease-in-out infinite;
+}
+
+.text5 {
+  top: 50%;
+  left: 2%;
+
+  animation: float5 13s ease-in-out infinite;
+}
+
+.text6 {
+  top: 60%;
+  right: 3%;
+
+  animation: float6 15s ease-in-out infinite;
+}
+
+
+/* MAIN CARD */
+.container {
+  width: 400px;
+  background: rgba(35, 53, 83, 0.9);
+  padding: 30px;
+  border-radius: 10px;
+
+  box-shadow:
+    0 0 30px rgba(0, 0, 0, 0.4),
+    0 0 50px rgba(56, 189, 248, 0.1);
+
+  z-index: 10;
+}
+
+h1 {
+  font-family: 'Bruno Ace SC', sans-serif;
+  font-family: 'Faculty Glyphic', sans-serif;
+  text-align: center;
+
+  margin-bottom: 25px;
+  font-size: 4.3rem;
+}
+
+
+/* PASSWORD BOX */
+
+.password-box {
+  display: flex;
+
+  margin-bottom: 25px;
+}
+
+.password-box input {
+  flex: 1;
+
+  padding: 12px;
+  border: none;
+  outline: none;
+
+  border-radius: 6px 0 0 6px;
+  font-size: 16px;
+
+  caret-color: black;
+}
+
+.password-box button {
+  font-family: 'Space Grotesk', sans-serif;
+  padding: 12px 18px;
+  border: none;
+
+  background: #3cb3e6;
+  color: white;
+
+  border-radius: 0 10px 10px 0;
+  cursor: pointer;
+}
+
+.password-box button:hover {
+  background: #0ea5e9;
+}
+
+.password-box button:active {
+  background: #065a87;
+}
+
+
+/* SETTINGS */
+
+.setting {
+  margin-bottom: 25px;
+}
+
+.setting label {
+  display: block;
+
+  margin-bottom: 10px;
+
+  font-size: 17px;
+}
+
+#length {
+  width: 100%;
+}
+
+
+/* OPTIONS */
+
+.options {
+  display: flex;
+  flex-direction: column;
+
+  gap: 15px;
+  margin-bottom: 25px;
+
+  font-size: 16px;
+}
+
+
+/* STRENGTH */
+
+.strength {
+  margin-bottom: 25px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+
+/* BUTTON */
+
+#generate-btn {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 17px;
+  font-size: larger;
+  width: 100%;
+
+  padding: 14px;
+
+  border: none;
+  border-radius: 6px;
+
+  background: #3cb3e6;
+
+  color: white;
+  cursor: pointer;
+}
+
+#generate-btn:hover {
+  background: #0ea5e9;
+}
+
+#generate-btn:active {
+  background: #065a87;
+}
+
+
+/* Floating Animations */
+
+@keyframes float1 {
+
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(40px, -20px);
+  }
+}
+
+@keyframes float2 {
+
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(-40px, 30px);
+  }
+}
+
+@keyframes float3 {
+
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(20px, -30px);
+  }
+}
+
+@keyframes float4 {
+
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(-25px, 20px);
+  }
+}
+
+@keyframes float5 {
+
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(35px, 35px);
+  }
+}
+
+@keyframes float6 {
+
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(-30px, -25px);
+  }
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+  .floating-text {
+    display: none;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .container {
+    padding: 24px;
+  }
+}
